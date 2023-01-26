@@ -13,7 +13,7 @@ The client was built to have an App for each entity API if logRhythm is used in 
 ```go
 token := "Token"
 
-app := gologrhythm.Create_App("DD", token, "10.10.10.10:8501")
+app := gologrhythm.Create_App("Entity1", token, "IPAddress:8501")
 
 cf := &gologrhythm.CasesFilters{
   Count: "10",
@@ -37,7 +37,7 @@ for _, c := range cases {
 
 token := "Token"
 
-app := gologrhythm.Create_App("DD", token, "10.10.10.10:8501")
+app := gologrhythm.Create_App("Entity1", token, "IPAddress:8501")
 
 af := gologrhythm.AlarmsFilters{
   Count:      "50",
@@ -62,7 +62,7 @@ for _, alarm := range alarms.AlarmsSearchDetails {
 
 token := "token"
 
-app := gologrhythm.Create_App("DD", token, "10.10.10.10:8501")
+app := gologrhythm.Create_App("Entity1", token, "IPAddress:8501")
 
 c, err := app.Case(123)
 if err != nil {
