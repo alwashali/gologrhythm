@@ -2,7 +2,7 @@
 
 Go API Client for LogRhythm SIEM. 
 
-The client was built to have an App for each entity API if logRhythm is used in a multi-tenancy environment.
+The client was built to have an App for each entity API in one or multi SIEM environment.
 
 
 ## Get started 
