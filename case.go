@@ -36,6 +36,7 @@ func (lr *LogRhtyhm) Cases(filters *CasesFilters) ([]*Case, error) {
 	resp, err := client.Do(req)
 	if err != nil {
 		log.Println("Can't request cases from:", lr.Name, err)
+		return
 	}
 
 	if resp.StatusCode == 200 {
